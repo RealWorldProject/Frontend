@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Trolley Bill</title>
+</head>
+
+<body>
+    <button id="modalBtn" class="button">Click Here</button>
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h1>Company</h1>
+            <p>Bill Number:001</p>
+            <p>Bill To:</p>
+            <div class="body">
+                <h3>Name:</h3>
+            </div>
+            <hr>
+            Items:
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.N.</th>
+                        <th>ItemName</th>
+                        <th>Rate</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Ball</td>
+                        <td>1000</td>
+                        <td>5</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Bag</td>
+                        <td>1200</td>
+                        <td>2</td>
+                        <td>2400</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Shoes</td>
+                        <td>1000</td>
+                        <td>3</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Book</td>
+                        <td>800</td>
+                        <td>5</td>
+                        <td>4000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <div id="rightalign">
+                <div>
+                    Grand Total $9,5000.00 <br>
+                    Paid $9,5000.00
+                    <hr>
+                </div>
+                Due: $00.00
+            </div>
+            <div class="print">
+                <button type="submit">Print</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
