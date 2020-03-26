@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Dashboard</title>
 </head>
 <body>
-    <h1>This is the index page </h1>
-    <h2>Hello !!!!</h2>
+    <nav class="collapse">
+        <div class="ham">
+            <button><img src="images/HamMenu.png" alt=""></button>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <hr>
+                <li>
+                    <a href="">
+                        <img src="images/user.png" alt="">
+                        <span class="menu-text">Hey, Blah</span>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="">
+                        <img src="images/logout.png" alt="">
+                        <span class="menu-text">Log Out</span>
+                    </a>
+                </li>
+                <hr>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <p class="heading">Dashboard</p>
+
+        <div class="box">
+            <img src="images/device.png" alt="">
+            <div>
+                <p class="sub-heading">Device One</p>
+                <p class="sub-heading">Status: <span>Active</span></p>
+            </div>
+        </div>
+    </section>
+    <script src="JS/index.js"></script>
 </body>
 </html>

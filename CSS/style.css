@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #0043FF;
+}
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+hr {
+    border: solid 1px #000;
+    width: 200px;
+}
+
+nav {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,67,255,1) 66%);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 249px;
+    height: 100vh;
+    z-index: 100;
+    transition-duration: 50ms;
+}
+
+nav .ham {
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav .ham button{
+    border: none;
+    background: none;
+}
+
+.nav-items {
+    padding-top: 62px;
+}
+
+.nav-items ul li a{
+    display: flex;
+}
+
+.nav-items ul li {
+    margin-left: 32px;
+    padding: 2px 0;
+}
+
+.nav-items ul li a span{
+    margin-left: 39px;
+    margin-top: 7px;
+}
+
+.menu-text {
+    display: inline;
+}
+
+nav.collapse {
+    width: 100px;
+}
+
+nav.collapse hr {
+    width: 80px;
+}
+
+nav.collapse .menu-text {
+    display: none;
+}
+
+nav.collapse .nav-items ul li {
+    margin-left: 25px;
+}
+
+section {
+    margin-left: 350px;
+}
+
+.heading {
+    font-size: 37px;
+}
+
+.sub-heading {
+    font-size: 31px;
+}
+
+.sub-heading span {
+    color: blue;
+}
+
+.box {
+    display: flex;
+    width: 518px;
+    box-shadow: 1px 13px 21px rgba(173, 164, 164, 0.308) ;
+}
+
+.box img{
+    padding-top: 39px;
+    margin-left: 55px;
+    padding-bottom: 37px;
+}
+
+.box div{
+    margin-left: 101px;
+}
