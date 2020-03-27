@@ -123,7 +123,7 @@ section {
     padding: 30px;
     border-radius: 5px;
     background:rgb(250, 249, 247);
-    color:rgb(54, 54, 126);
+    color:var(--primary-color);
     top: 50%;
     left:50%;
     position: absolute;
@@ -181,7 +181,7 @@ section {
     padding: 10px 0;
     transition: border 0.5s;
     outline: none;
-    color: rgb(54, 54, 126) ;
+    color:var(--primary-color);;
     
   }
   input:invalid {
@@ -192,7 +192,7 @@ section {
     margin-top:30px ;
     width: 240px;
     color:#fff;
-    background-color: rgb(54, 54, 126);
+    background-color:var(--primary-color);;
     font-size: 16px;
     line-height: 25px;
     padding: 10px 0;
@@ -201,7 +201,7 @@ section {
 }
 .loginbox a{
     text-decoration: none;
-    color: rgb(54, 54, 126);
+    color: var(--primary-color);;
     float: right;
     line-height: 40px;
 }
