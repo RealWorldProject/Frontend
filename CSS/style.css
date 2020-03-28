@@ -298,3 +298,57 @@ tr:nth-child(even) {
   cursor: pointer;
   border-radius: 5%;
 }
+.container{
+  width:80%;
+  margin:auto;
+}
+.removebtn{
+  color: blue;
+  border-radius: 6px;
+  border-color: blue;
+  size: 15px;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.removebtn a{
+  color: blue;
+  font-size: 16px;
+}
+.devicetable thead{
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+.devicetable{
+  border: 1px solid black;
+  box-shadow: 20px 20px 20px  #A9A9A9;
+  background-color: #FAFAFA;
+}
+#lower{
+  text-align: left;
+  margin-left: 90px;
+  margin-top: 70px;
+}
+#lower .amount{
+  float: left;
+  padding: 60px;
+  font-size: 20px;
+}
+#lower .total{
+  float: left;
+  padding: 60px;
+  font-size: 20px;
+}
+#lower .checkout{
+  float: left;
+  margin: 30px;
+  margin-left: 100px;
+  padding: 10px;
+  width: 120px;
+  height: 90px;
+  font-weight: 800;
+  font-size: 17px;
+  color: red;
+}
+
