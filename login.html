@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="CSS/style.css">
   <title>Trolley</title>
 </head>
@@ -14,14 +15,17 @@
       <img src="/img/login/avatar.png" class="avatar">
       <h1>Member Login</h1>
       <div class="input validate-input">
-
+        <i class="fa fa-user cust" aria-hidden="true"></i>
         <input type="text" placeholder="Username" id="username" name="username" required>
+        <br>
+        <i class="fa fa-lock cust" aria-hidden="true"></i>
         <input type="password" placeholder="Password" id="password" name="password" required>
+        <i class="fa fa-eye eye" aria-hidden="true" onclick="showPW()"></i>
 
         <button id="btnLogin">Log In</button>
 
       </div>
-      <a href="#">Forget Password?</a>
+      <a href="#" id="forgetPW">Forget Password?</a>
 
     </div>
 
@@ -29,6 +33,7 @@
 
 
   <script type="text/javascript" src="js/login.js"></script>
+  
 </body>
 
 </html>
