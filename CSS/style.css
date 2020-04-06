@@ -176,16 +176,38 @@ section {
     border: none ;
     border-bottom: 2px solid rgb(54, 54, 126);
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bolder;
-    padding: 10px 0;
+    margin-top: 10px;
+    padding: 5px 0px;
     transition: border 0.5s;
     outline: none;
-    color:var(--primary-color);;
-    
+    margin-left: 15px;
+    color:var(--primary-color);
+    padding-left: 40px;
   }
-  input:invalid {
+input:invalid {
     box-shadow: none;
+}
+.cust{
+  position: absolute;
+  font-size: 20px;
+  background: transparent;
+  margin-left: 14px;
+  margin-top: 5px;
+  width:36px;
+  height: 44px;
+  padding-top: 8px;
+}
+.eye{
+  position: absolute;
+  font-size: 16px;
+  background: transparent;
+  left: 70%;
+  margin-top: 15px;
+  width:36px;
+  height: 44px;
+  cursor: pointer;
 }
 #btnLogin{
     border: none;
@@ -201,6 +223,7 @@ section {
 }
 .loginbox a{
     text-decoration: none;
+    font-size: 16px;
     color: var(--primary-color);;
     float: right;
     line-height: 40px;
