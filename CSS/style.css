@@ -232,14 +232,14 @@ input:focus::placeholder {
     color: transparent;
   }
 
-.button {
+#btnLogin {
     background: #428bca;
     padding: 1em 2em;
     color: #fff;
     border: 0;
 }
 
-.button:hover {
+#btnLogin:hover {
     background: #3876ac;
 }
 
