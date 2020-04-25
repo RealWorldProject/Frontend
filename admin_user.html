@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="CSS/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="CSS/admin_adduser.css">
     <link rel="stylesheet" type="text/css" href="CSS/admin_user.css">
     <title>devices</title>
 </head>
@@ -47,8 +47,8 @@
                     </form>
                 </div>
                 <div id="adduser">
-                    <button class="addUser"><i class="fa fa-user-plus" aria-hidden="true"
-                            style="font-size:22px;color: black"></i> Add User</button>
+                    <button onclick="openForm()" class="addUser"><i class="fa fa-user-plus" aria-hidden="true"
+                            style="font-size:22px;color: black" ></i> Add User</button>
                 </div>
             </div>
             <table class="usertable">
@@ -61,7 +61,7 @@
                         <th>Username</th>
                         <th>Password</th>
                         <th>Access</th>
-                        <th>ACTION</th>
+                        <th>Action</th>
                     </thead>
                 </tr>
                 <!-- To display all the user details  -->
@@ -84,6 +84,25 @@
             </table>
 
     </section>
+    <!-- ----------------Add User-------------- -->
+    <div id="addUserForm" class="form">
+        <form action="" class="form-content">
+            <span class="closeBtn" onclick="closeForm()">&times;</span>
+            <h1>Company</h1>
+
+            <input type="text" placeholder="First Name" id="firstname" name="firstname" required>
+            <input type="text" placeholder="Last Name" id="lastname" name="lastname" required>
+            <input type="text" placeholder="Username" id="username" name="username" required>
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            <input type="text" placeholder="Access" id="access" name="access" required>
+            <button id="btnAdd">Add User</button>
+        
+        </form>
+    </div>
+    <!-- ----------------Add User Close-------------- -->
+    
+    
+    <script src="JS/adduser.js"></script>
     <script src="JS/index.js"></script>
 </body>
 
