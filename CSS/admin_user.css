@@ -1,0 +1,188 @@
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,67,255,1) 66%);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 249px;
+    height: 100vh;
+    z-index: 100;
+    transition-duration: 50ms;
+}
+
+nav .ham {
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav .ham button{
+    border: none;
+    background: none;
+}
+
+.nav-items {
+    padding-top: 62px;
+}
+
+.nav-items ul li a{
+    display: flex;
+}
+
+.nav-items ul li {
+    margin-left: 32px;
+    padding: 2px 0;
+}
+
+.nav-items ul li a span{
+    margin-left: 39px;
+    margin-top: 7px;
+}
+
+.menu-text {
+    display: inline;
+}
+
+nav.collapse {
+    width: 100px;
+}
+
+nav.collapse hr {
+    width: 80px;
+}
+
+nav.collapse .menu-text {
+    display: none;
+}
+
+nav.collapse .nav-items ul li {
+    margin-left: 25px;
+}
+
+
+
+
+/* user details */
+#user{
+    margin-top:25px;
+}
+#user h1{
+    font-size: 36px;
+}
+.container{
+    margin-left: 50px;
+}
+#user .search-container{
+    display: inline;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .container{
+    width:80%;
+    padding-left: 40px;
+    margin:auto;
+  }
+  .removebtn{
+    color: red;
+    border-radius: 6px;
+    border-color: red;
+    size: 15px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .removebtn a{
+    color: red;
+    font-size: 16px;
+  }
+  .editbtn{
+    color: blue;
+    border-radius: 6px;
+    border-color: blue;
+    size: 15px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .editbtn a{
+    color: blue;
+    font-size: 16px;
+  }
+  
+  .usertable thead{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+  }
+  #user .usertable{
+    border: 1px solid black;
+    box-shadow: 20px 20px 20px  #A9A9A9;
+    margin-top: 100px;
+    background-color: #FAFAFA;
+  }
+
+  .addUser{
+      float: right;
+      background-color: rgb(231, 219, 221);
+      font-weight: bold;
+      
+      padding-bottom: 8px;
+      padding-top: 8px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width:auto;
+      height:auto;
+      font-size: 16px;
+      box-shadow: 5px 5px 10px  #A9A9A9
+    
+  }
+  .container .search-container {
+    float: left;
+    display: flex;
+    
+  }
+  
+  .container .search-container input[type=text] {
+    padding: 9px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(248, 239, 243);
+  }
+  
+  .container .search-container button {
+    float: right;
+    padding: 10px;
+    margin-right: 16px;
+    background: rgb(228, 226, 226);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .container .search-container button:hover {
+    background: #ccc;
+  }
