@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/item_addItem.css">
+    <link rel="stylesheet" type="text/css" href="CSS/item_iteminfo.css">
+    <title>Items</title>
+</head>
+
+<body>
+    <nav class="collapse">
+        <div class="ham">
+            <button><img src="images/HamMenu.png" alt=""></button>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <hr>
+                <li>
+                    <a href="">
+                        <img src="images/user.png" alt="">
+                        <span class="menu-text">Hey, Blah</span>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="">
+                        <img src="images/logout.png" alt="">
+                        <span class="menu-text">Log Out</span>
+                    </a>
+                </li>
+                <hr>
+            </ul>
+        </div>
+    </nav>
+    <section id="item">
+
+        <div class="container">
+            <h1>Items</h1>
+            <div>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div id="addItem">
+                    <button onclick="openForm()" class="addItem"><i class="fa fa-cart-plus" aria-hidden="true"
+                            style="font-size:22px;color: black" ></i> Add Item</button>
+                </div>
+            </div>
+            <table class="itemtable">
+
+                <tr>
+                    <thead>
+                        <th>Item Code</th>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Total Quantity</th>
+                        <th>MFD</th>
+                        <th>EXD</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </thead>
+                </tr>
+                <!-- To display all the item details  -->
+
+                <tr>
+                    <tbody>
+                        <td>15tf2</td>
+                        <td>Heater</td>
+                        <td>3500</td>
+                        <td>30</td>
+                        <td>01/05/2015</td>
+                        <td>01/05/2016</td>
+                        <td>Electronic Devices</td>
+                        <td>
+                            <button class="removebtn"><a href="">Remove</a></button>
+                            <button class="editbtn"><a href="">Edit</a></button>
+                        </td>
+                    </tbody>
+
+                </tr>
+            </table>
+
+    </section>
+    <!-- ----------------Add Item-------------- -->
+    <div id="addItemForm" class="form">
+        <form action="" class="form-content">
+            <span class="closeBtn" onclick="closeForm()">&times;</span>
+            <h1>Company</h1>
+
+            <input type="text" placeholder="Item code" id="itemcode" name="itemcode" required>
+            <input type="text" placeholder="Item Name" id="itemname" name="itemname" required>
+            <input type="number" placeholder="Item Price" id="itemprice" name="itemprice" required>
+            <input type="number" placeholder="Item Quantity" id="itemqty" name="itemqty" required>
+            <input type="date" placeholder="Manufacture Date" id="MFDdate" name="MFDdate" required>
+            <input type="date" placeholder="Expiry Date" id="EXDdate" name="EXDdate" required>
+            <select name="category" id="category">
+                <option value="Food">Food</option>
+                <option value="SmartWatches">SmartWatches</option>
+            </select>
+            <button id="btnAdd">Add Item</button>
+        
+        </form>
+    </div>
+    <!-- ----------------Add Item Close-------------- -->
+    
+    
+    <script src="JS/additem.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-content h1{
+    color: blue;
+    font-size: 40px;
+}
+
+.form {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-content {
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-duration:1s;
+  }
+
+.closeBtn {
+    color: rgb(158, 154, 154);
+    margin-top: 20px;
+    float: right;
+    font-size: 60px;
+}
+
+.closeBtn:hover,.closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#addItemForm{
+    display: none;
+}
+.form-content{
+    width: 540px;
+    height: auto;
+    border: 10px rgb(36, 20, 128, 0.2);
+    padding: 30px;
+    border-radius: 5px;
+    background:rgb(250, 249, 247);
+    color:var(--primary-color);
+    top: 40%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    box-decoration-break: slice;
+}
+.form-content{
+    margin-top:25px;
+    text-align:left;
+}
+.form-content input[type=text],input[type=number],input[type=date]{
+    width: 95%;
+    
+    text-align: left;
+    background: transparent;
+    border: none ;
+    border-bottom: 2px solid rgb(54, 54, 126);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px 0px;
+    transition: border 0.5s;
+    outline: none;
+    margin-left: 15px;
+    color:var(--primary-color);
+    
+  }
+
+  .form-content select{
+    width: 95%;
+    
+    text-align: left;
+    background: transparent;
+    border: none ;
+    border-bottom: 2px solid rgb(54, 54, 126);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px 0px;
+    transition: border 0.5s;
+    outline: none;
+    margin-left: 15px;
+    color:var(--primary-color);
+    
+  }
+
+input:invalid {
+    box-shadow: none;
+}
+
+#btnAdd{
+    float: right;
+    border: none;
+    margin-top:30px;
+    width: 120px;
+    color: rgb(46, 45, 45);
+    background-color: rgb(231, 219, 221);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input:focus::placeholder {
+    color: transparent;
+  }
+
+
