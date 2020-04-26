@@ -96,8 +96,10 @@
             <input type="text" placeholder="Item Name" id="itemname" name="itemname" required>
             <input type="number" placeholder="Item Price" id="itemprice" name="itemprice" required>
             <input type="number" placeholder="Item Quantity" id="itemqty" name="itemqty" required>
-            <input type="date" placeholder="Manufacture Date" id="MFDdate" name="MFDdate" required>
-            <input type="date" placeholder="Expiry Date" id="EXDdate" name="EXDdate" required>
+            <input type="text" placeholder="Manufacture Date" id="MFDdate" name="MFDdate" 
+                    onfocus="(this.type='date')" onblur="(this.type='text')" required>
+            <input type="text" placeholder="Expiry Date" id="EXDdate" name="EXDdate"
+                    onfocus="(this.type='date')" onblur="(this.type='text')"  required>
             <select name="category" id="category">
                 <option value="Food">Food</option>
                 <option value="SmartWatches">SmartWatches</option>
